@@ -33,5 +33,12 @@ namespace ElectionWebApp.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        [HttpPost]
+        public JsonResult AddMessagesToQueue()
+        {
+
+            return new JsonResult("Success");
+        }
     }
 }
